@@ -17,8 +17,7 @@ WORKDIR "/src/."
 RUN dotnet build "ConsoleDb2DotNET8App.csproj" -c Release -o /app/build
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./ConsoleDb2DotNET8App.csproj" -c Release -o /app/publish
+RUN dotnet publish "ConsoleDb2DotNET8App.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
