@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleDb2DotNET8App": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
